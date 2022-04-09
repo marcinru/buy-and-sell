@@ -8,7 +8,7 @@ import { MyListingsPageComponent } from './my-listings-page/my-listings-page.com
 import { NewListingPageComponent } from './new-listing-page/new-listing-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/listings', pathMatch: 'full' },
+  { path: '', redirectTo: '/my-listings', pathMatch: 'full' },
   { path: 'listings', component: ListingsPageComponent, pathMatch: 'full' },
   { path: 'listings/:id', component: ListingDetailsPageComponent },
   { path: 'contact/:id', component: ContactPageComponent },
