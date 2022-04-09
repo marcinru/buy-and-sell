@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./listing-data-form.component.css']
 })
 export class ListingDataFormComponent implements OnInit {
+  @Input() buttonText: string = '';
   name: string = '';
   description: string = '';
   price: string = '';
