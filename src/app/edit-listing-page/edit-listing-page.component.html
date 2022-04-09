@@ -2,6 +2,9 @@
     <h2>Edit Listing</h2>
     <app-listing-data-form
         buttonText="Save changes"
+        [currentName]="listing ? listing.name : ''"
+        [currentDescription]="listing ? listing.description : ''"
+        [currentPrice]="listing ? listing.price.toString() : ''"
         (onSubmit)="onSubmit()"
     >
     </app-listing-data-form>
